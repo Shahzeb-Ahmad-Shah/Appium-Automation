@@ -28,7 +28,7 @@ import io.appium.java_client.windows.WindowsDriver;
 public class ScrollDemo extends BaseTest {
 	
 	@Test
-	public void longPress() throws MalformedURLException, InterruptedException
+	public void scrollTest() throws MalformedURLException, InterruptedException
 	{
 		driver.findElement(AppiumBy.accessibilityId("Views")).click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"));"));

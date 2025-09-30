@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="shahtest.AppiumBasics">
+      <class name="shahtest.DragDropDemo">
         <methods>
+          <include name="longPress"/>
           <include name="configureAppium"/>
-          <include name="wifiSettingsName"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- shahtest.AppiumBasics -->
+      </class> <!-- shahtest.DragDropDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

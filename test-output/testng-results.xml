@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-30T13:01:35 PKT" name="Default suite" finished-at="2025-09-30T13:01:51 PKT" duration-ms="16672">
+  <suite started-at="2025-09-30T15:51:45 PKT" name="Default suite" finished-at="2025-09-30T15:51:58 PKT" duration-ms="13118">
     <groups>
     </groups>
-    <test started-at="2025-09-30T13:01:35 PKT" name="Default test" finished-at="2025-09-30T13:01:51 PKT" duration-ms="16672">
-      <class name="shahtest.SwipeDemo">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:shahtest.SwipeDemo@327514f]" started-at="2025-09-30T13:01:35 PKT" name="configureAppium" finished-at="2025-09-30T13:01:41 PKT" duration-ms="6169" status="PASS">
+    <test started-at="2025-09-30T15:51:45 PKT" name="Default test" finished-at="2025-09-30T15:51:58 PKT" duration-ms="13118">
+      <class name="shahtest.DragDropDemo">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:shahtest.DragDropDemo@327514f]" started-at="2025-09-30T15:51:45 PKT" name="configureAppium" finished-at="2025-09-30T15:51:50 PKT" duration-ms="4962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="longPress()[pri:0, instance:shahtest.SwipeDemo@327514f]" started-at="2025-09-30T13:01:41 PKT" name="longPress" finished-at="2025-09-30T13:01:50 PKT" duration-ms="9125" status="PASS">
+        <test-method signature="longPress()[pri:0, instance:shahtest.DragDropDemo@327514f]" started-at="2025-09-30T15:51:50 PKT" name="longPress" finished-at="2025-09-30T15:51:58 PKT" duration-ms="7657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- longPress -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:shahtest.SwipeDemo@327514f]" started-at="2025-09-30T13:01:50 PKT" name="tearDown" finished-at="2025-09-30T13:01:51 PKT" duration-ms="1319" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:shahtest.DragDropDemo@327514f]" started-at="2025-09-30T15:51:58 PKT" name="tearDown" finished-at="2025-09-30T15:51:58 PKT" duration-ms="471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- shahtest.SwipeDemo -->
+      </class> <!-- shahtest.DragDropDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

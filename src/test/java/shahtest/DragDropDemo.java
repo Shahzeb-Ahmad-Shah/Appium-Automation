@@ -25,20 +25,21 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.windows.WindowsDriver;
 
-public class SwipeDemo extends BaseTest {
+public class DragDropDemo extends BaseTest {
 	
 	@Test
-	public void swipeAction() throws MalformedURLException, InterruptedException
+	public void dragDropTest() throws MalformedURLException, InterruptedException
 	{
 		driver.findElement(AppiumBy.accessibilityId("Views")).click();
-		driver.findElement(AppiumBy.accessibilityId("Gallery")).click();
-		driver.findElement(AppiumBy.accessibilityId("1. Photos")).click();
-		WebElement firstImage = driver.findElement(By.xpath("//android.widget.ImageView[1]"));
-		Assert.assertEquals(driver.findElement(By.xpath("//android.widget.ImageView[1]")).getAttribute("focusable"), "true");
-		//swipe
-		swipeAction(firstImage, "left");
+		driver.findElement(AppiumBy.accessibilityId("Drag and Drop")).click();
+		WebElement dragElement = driver.findElement(By.id("io.appium.android.apis:id/drag_dot_1"));
 		
-		Assert.assertEquals(driver.findElement(By.xpath("//android.widget.ImageView[1]")).getAttribute("focusable"), "false");
+		driver.executeScript("mobile: dragGesture",
+				ImmutableMap.of("elementId", ((RemoteWebElement)dragElement).getId(),
+						"endX", 652,
+						"endY", 589));
+		String result = driver.findElement(By.id("io.appium.android.apis:id/drag_result_text")).getText();
+		Assert.assertEquals(result, "Dropped!");
 		
 		Thread.sleep(2000);
 		
