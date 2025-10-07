@@ -13,8 +13,11 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
@@ -30,8 +33,15 @@ public class MiscellanousAction extends BaseTest {
 	public void miscAction() throws MalformedURLException
 	{
 		//Actual Automation
-		driver.findElement(AppiumBy.accessibilityId("Preference")).click();
-		driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
+		/*driver.findElement(AppiumBy.accessibilityId("Preference")).click();
+		driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click(); */
+		
+		//App Package & App Activity
+		
+		//Adb command for windows to find activity
+		// adb shell dumpsys window | findstr mCurrentFocus
+        
+		driver.executeScript("mobile: startActivity", ImmutableMap.of("intent", "io.appium.android.apis/io.appium.android.apis.preference.PreferenceDependencies"));	
 		driver.findElement(By.id("android:id/checkbox")).click();
 		DeviceRotation landscape = new DeviceRotation(0, 0, 90);
 		driver.rotate(landscape);
