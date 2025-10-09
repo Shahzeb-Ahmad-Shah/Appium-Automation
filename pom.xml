@@ -18,7 +18,35 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
-<dependencies> <!-- https://mvnrepository.com/artifact/io.appium/java-client --> <dependency> <groupId>io.appium</groupId> <artifactId>java-client</artifactId> <version>10.0.0</version> </dependency> <!-- https://mvnrepository.com/artifact/org.testng/testng --> <dependency> <groupId>org.testng</groupId> <artifactId>testng</artifactId> <version>7.11.0</version> </dependency> </dependencies>
+<dependencies>
+
+    <!-- Appium Java Client -->
+    <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+    <dependency>
+        <groupId>io.appium</groupId>
+        <artifactId>java-client</artifactId>
+        <version>10.0.0</version>
+    </dependency>
+
+    <!-- TestNG -->
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.11.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- Selenium Support -->
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-support</artifactId>
+        <version>4.36.0</version>
+    </dependency>
+
+</dependencies>
+
 
   <build>
     <plugins>
