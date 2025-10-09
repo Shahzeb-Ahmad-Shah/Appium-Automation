@@ -41,8 +41,8 @@ public class BaseTest {
 		//Use UiAutomator2Options to avoid ambiguity
 		UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("Shahemulator");
-        options.setApp("C://Users//ShahzebAhmadShah//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk");
-		
+        //options.setApp("C://Users//ShahzebAhmadShah//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk");
+        options.setApp("C://Users//ShahzebAhmadShah//eclipse-workspace//Appium//src//test//java//resources//General-Store.apk");
 		//AndroidDriver
 		driver = new AndroidDriver(URI.create("http://127.0.0.1:4723").toURL(), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); 

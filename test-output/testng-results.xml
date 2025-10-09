@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-07T12:28:34 PKT" name="Default suite" finished-at="2025-10-07T12:29:02 PKT" duration-ms="28046">
+  <suite started-at="2025-10-09T12:42:40 PKT" name="Default suite" finished-at="2025-10-09T12:43:00 PKT" duration-ms="19419">
     <groups>
     </groups>
-    <test started-at="2025-10-07T12:28:34 PKT" name="Default test" finished-at="2025-10-07T12:29:02 PKT" duration-ms="28046">
-      <class name="shahtest.MiscellanousAction">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:shahtest.MiscellanousAction@327514f]" started-at="2025-10-07T12:28:34 PKT" name="configureAppium" finished-at="2025-10-07T12:28:49 PKT" duration-ms="15082" status="PASS">
+    <test started-at="2025-10-09T12:42:40 PKT" name="Default test" finished-at="2025-10-09T12:43:00 PKT" duration-ms="19419">
+      <class name="shahtest.eCommerce_tc_1">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:shahtest.eCommerce_tc_1@327514f]" started-at="2025-10-09T12:42:40 PKT" name="configureAppium" finished-at="2025-10-09T12:42:46 PKT" duration-ms="5726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="miscAction()[pri:0, instance:shahtest.MiscellanousAction@327514f]" started-at="2025-10-07T12:28:49 PKT" name="miscAction" finished-at="2025-10-07T12:29:01 PKT" duration-ms="11567" status="PASS">
+        <test-method signature="FillForm()[pri:0, instance:shahtest.eCommerce_tc_1@327514f]" started-at="2025-10-09T12:42:46 PKT" name="FillForm" finished-at="2025-10-09T12:42:59 PKT" duration-ms="12673" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please your name] but found [Please enter your name]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please your name] but found [Please enter your name]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at shahtest.eCommerce_tc_1.FillForm(eCommerce_tc_1.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- miscAction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:shahtest.MiscellanousAction@327514f]" started-at="2025-10-07T12:29:01 PKT" name="tearDown" finished-at="2025-10-07T12:29:02 PKT" duration-ms="1352" status="PASS">
+        </test-method> <!-- FillForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:shahtest.eCommerce_tc_1@327514f]" started-at="2025-10-09T12:42:59 PKT" name="tearDown" finished-at="2025-10-09T12:43:00 PKT" duration-ms="945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- shahtest.MiscellanousAction -->
+      </class> <!-- shahtest.eCommerce_tc_1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
