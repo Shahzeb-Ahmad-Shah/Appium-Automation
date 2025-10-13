@@ -41,6 +41,7 @@ public class BaseTest {
 		//Use UiAutomator2Options to avoid ambiguity
 		UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("Shahemulator");
+        options.setChromedriverExecutable("C:\\Users\\ShahzebAhmadShah\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
         //options.setApp("C://Users//ShahzebAhmadShah//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk");
         options.setApp("C://Users//ShahzebAhmadShah//eclipse-workspace//Appium//src//test//java//resources//General-Store.apk");
 		//AndroidDriver
